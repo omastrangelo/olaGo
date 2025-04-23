@@ -89,6 +89,8 @@ Podés acceder a toda la información y seguimiento del proyecto desde el siguie
 - **Presentación:** [Resumen visual del proyecto](https://docs.google.com/presentation/d/10T6rnri7h2ENdRaWaaLQk88URqNFwMsk/edit#slide=id.g341fe2678a1_0_47)  
 - **Planilla:** [Plan de trabajo y cronograma](https://docs.google.com/spreadsheets/d/1vk_FE1fCL0Y_JTdr20FgdD9wB8lkP4XP3_N28-Cg61U/edit?gid=0#gid=0)
 
+- **Carpeta del proyecto:** [código, recursos, entregas]
+(https://drive.google.com/drive/folders/1H0vZtwjaXcB0iVlAS93Fl9MHeArPDlgx)
 ---
 
 ## 🚀 Con QuickSolutions, lo digital es simple, ágil y humano.
