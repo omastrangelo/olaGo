@@ -1,0 +1,29 @@
+
+/*Reset estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#F37335
+}
+
+.primerElementoFooter{
+    display: contents;
+}
+
+.botonFooter{
+    background-color:#FDC830;
+    width: 290px; ;
+    height:46px ;
+    border-radius: 20px ;
+}
