@@ -1,0 +1,93 @@
+/* Media Queries tablet */
+@media (max-width: 992px) {
+  .contenedorPasos {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .imagenCentro {
+    order: -1; /* muevo la img hacia arriba*/
+    margin: 1rem 0;
+    padding: 0;
+  }
+  
+  .imagenCentro img {
+    max-width: 200px;
+  }
+  
+  .columnaPasos {
+    gap: 1rem;
+  }
+}
+
+/* ParaCelulares */
+
+@media (max-width: 768px) {
+  .CompartirViaje {
+    padding: 1.5rem;
+  }
+  
+  .tituloPrincipal {
+    font-size: 1.5rem;
+  }
+  
+  .botonUsuario {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+  }
+  
+  .paso {
+    padding: 1.2rem;
+  }
+  
+  .paso h3 {
+    font-size: 1.1rem;
+  }
+  
+  .paso p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .botonesTipoUsuario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .botonUsuario {
+    width: 80%;
+    margin: 0;
+  }
+  
+  .tarjetaContenido {
+    border-radius: 12px;
+  }
+  
+  .paso {
+    padding: 1rem;
+  }
+  
+  .icono {
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+/* muy jerigna para el celular pequeños */
+@media (max-width: 400px) {
+  .tituloPrincipal {
+    font-size: 1.3rem;
+  }
+  
+  .imagenCentro img {
+    max-width: 180px;
+  }
+  
+  .paso {
+    padding: 0.8rem;
+  }
+}
