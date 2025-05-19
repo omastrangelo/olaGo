@@ -153,4 +153,6 @@ footer{
     width: 290px; ;
     height:46px ;
     border-radius: 20px ;
+    border-style: none;
+    margin-bottom: 10px;
 }
