@@ -148,11 +148,37 @@ footer{
     display: contents;
 }
 
-.botonFooter{
-    background-color:#FDC830;
-    width: 290px; ;
-    height:46px ;
-    border-radius: 20px ;
-    border-style: none;
-    margin-bottom: 10px;
+.botonFooter {
+  background-color: #FDC830;
+  width: 350px;
+  height: 46px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+
+.contenedorIconosFooter{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+.bi, .bi-instagram{
+  margin-right: 40px;
+}
+
+.bi , .bi-facebook{
+margin-left: 40px;
+}
+
+.primerElementoFooter p{
+  font-weight:500;
+  font-size: 25px;
+}
+
+.segundoElementoFooter p{
+  font-weight:300;
+  font-size: 35px;
 }
