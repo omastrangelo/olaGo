@@ -64,7 +64,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  height: auto;
+   /* Le pongo alto definido para que no rompa layout */
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -78,6 +78,7 @@
 .tarjetaPasajero {
   background: linear-gradient(90deg, #f97316, #facc15);
   color: white;
+  
 }
 
 .tarjetaConductor {
@@ -131,7 +132,50 @@
 
 /* ------------------------------------------ */
 
+/* Sección Reseñas ------------------------------------------ */
 
+
+.reseñasSeccion {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.reseña-card {
+  background-color: #ffe5b4; /*ver, no me convence todavia */
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reseña-card .comilla {
+  font-size: 40px;
+  line-height: 0;
+  color: #f57c00;
+  margin-bottom: 1rem;
+}
+
+.reseña-card .texto {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.Opinion{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.estrellas {
+  color: #fbc02d; 
+  font-size: 20px;
+}
+
+
+
+/* ------------------------------------------ */
 
 
 
