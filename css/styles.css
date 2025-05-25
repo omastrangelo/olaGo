@@ -180,6 +180,10 @@
 
 
 /*Footer -------------------------------------*/
+
+.curvaFooter{
+  margin-bottom: -5px;
+}
 footer{
   background-color: #F37335;
 }
