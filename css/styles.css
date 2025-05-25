@@ -137,15 +137,20 @@
 
 /*Footer -------------------------------------*/
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color:#F37335
+  background-color: #F37335;
 }
 
+
 .primerElementoFooter{
-    display: contents;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px  30px 0px;
+}
+
+.primerElementoFooter p{
+  font-weight:500;
+  font-size: 25px;
 }
 
 .botonFooter {
@@ -155,6 +160,14 @@ footer{
   border-radius: 20px;
   border: none;
   margin-bottom: 10px;
+}
+
+.segundoElementoFooter p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight:300;
+  font-size: 35px;
 }
 
 
@@ -173,12 +186,36 @@ footer{
 margin-left: 40px;
 }
 
-.primerElementoFooter p{
-  font-weight:500;
-  font-size: 25px;
+
+.tercerElementoFooter{
+  margin: 60px 0px 0px 40px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+
 }
 
-.segundoElementoFooter p{
-  font-weight:300;
-  font-size: 35px;
+
+.tercerElementoFooter h4 {
+  color: #686868;
+
+}
+
+.tercerElementoFooter ul{
+list-style: none;
+padding: 0
+
+}
+
+
+.tercerElementoFooter li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.contenedorEmpresa{
+  margin-right: 40px;
+
 }
