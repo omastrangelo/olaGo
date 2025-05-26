@@ -9,6 +9,42 @@
 }
 
 
+/* NavBar -----------------------*/
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: rgba(255, 255, 255, 0.6); /* o transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.container-fluid{
+  height: 6rem;
+}
+
+.navbar-nav{
+  font-size:larger;
+}
+
+.navbar-brand img{
+  width: 160px;
+}
+
+.botonNavBar{
+    color: white;
+    background-color: #F37335;
+    height: 43px;
+    width: 156px;
+    border: none;
+    border-radius: 15px;
+    margin: 0rem 4rem 0rem 0rem;
+    font-weight: 500;
+}
+
+
 
 /* Sección CompartirViaje -----------------------*/
 .CompartirViaje {
