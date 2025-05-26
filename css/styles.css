@@ -49,24 +49,24 @@ body {
 }
 
 /* Sección Informativa - ¿Cómo Funciona? ----------------------*/
-.seccionInformativa {
+.seccionInformativa1 {
   display: flex;
   padding: 0rem 8rem 0rem 8rem;
   align-items: center;
 }
 
-.boxComoFunciona {
+.contenedorComoFunciona {
   padding: 8rem;
 }
 
-.boxComoFunciona h2 {
+.contenedorComoFunciona h2 {
   font-size: 1.8rem;
   font-weight: bold;
   color: #333;
   margin-bottom: 1.5rem;
 }
 
-.boxComoFunciona p {
+.contenedorComoFunciona p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -89,6 +89,20 @@ body {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.seccionInformativa2 {
+  display: flex;
+  padding: 0rem 12rem 0rem 12rem;
+  align-items: center;
+}
+
+.imgInformativa2 {
+  width: 500px;
+  height: 480px;
+}
+
+.contenedorPorQueOlaGo {
+  padding: 8rem;
+}
 
 
 /* Sección CompartirViaje -----------------------*/
