@@ -52,7 +52,7 @@ body {
 .heroIndex{
   width: 100%;
   height: 850px;
-  background-image: url('img/HeroIndex.jpg');
+  background-image: url('/img/HeroIndex.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
