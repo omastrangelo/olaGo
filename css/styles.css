@@ -8,7 +8,7 @@
 }
 
 body {
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
 
@@ -47,6 +47,17 @@ body {
   margin: 0rem 4rem 0rem 0rem;
   font-weight: 500;
 }
+/*Hero Index*/
+
+.heroIndex{
+  width: 100%;
+  height: 850px;
+  background-image: url(/img/HeroIndex.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 /* Sección Informativa - ¿Cómo Funciona? ----------------------*/
 .seccionInformativa1 {
