@@ -1,51 +1,92 @@
-
 /*Reset estilos generales*/
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: "Montserrat", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
   margin-top: 10rem;
 }
 
 
 /* NavBar -----------------------*/
 
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1030;
-  background-color: rgba(255, 255, 255, 0.6); /* o transparent */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* o transparent */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-.container-fluid{
+.container-fluid {
   height: 6rem;
 }
 
-.navbar-nav{
-  font-size:larger;
+.navbar-nav {
+  font-size: larger;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   width: 160px;
 }
 
-.botonNavBar{
-    color: white;
-    background-color: #F37335;
-    height: 43px;
-    width: 156px;
-    border: none;
-    border-radius: 15px;
-    margin: 0rem 4rem 0rem 0rem;
-    font-weight: 500;
+.botonNavBar {
+  color: white;
+  background-color: #F37335;
+  height: 43px;
+  width: 156px;
+  border: none;
+  border-radius: 15px;
+  margin: 0rem 4rem 0rem 0rem;
+  font-weight: 500;
+}
+
+/* Sección Informativa - ¿Cómo Funciona? ----------------------*/
+.seccionInformativa {
+  display: flex;
+  padding: 0rem 8rem 0rem 8rem;
+  align-items: center;
+}
+
+.boxComoFunciona {
+  padding: 8rem;
+}
+
+.boxComoFunciona h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.boxComoFunciona p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.botonComoFunciona {
+  color: white;
+  background-color: #F37335;
+  height: 49px;
+  width: 227px;
+  border: none;
+  border-radius: 15px;
+  margin: 0rem 4rem 0rem 0rem;
+  font-weight: 500;
+}
+
+.imgInformativa1 {
+  width: 700px;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -104,10 +145,10 @@ body{
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
-   /* Le pongo alto definido para que no rompa layout */
+  /* Le pongo alto definido para que no rompa layout */
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
@@ -118,7 +159,7 @@ body{
 .tarjetaPasajero {
   background: linear-gradient(90deg, #f97316, #facc15);
   color: white;
-  
+
 }
 
 .tarjetaConductor {
@@ -184,7 +225,8 @@ body{
 }
 
 .reseña-card {
-  background-color: #ffe5b4; /*ver, no me convence todavia */
+  background-color: #ffe5b4;
+  /*ver, no me convence todavia */
   border-radius: 12px;
   padding: 1.5rem;
   max-width: 300px;
@@ -203,13 +245,13 @@ body{
   margin-bottom: 1rem;
 }
 
-.Opinion{
-    font-size: 12px;
-    font-weight: 700;
+.Opinion {
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .estrellas {
-  color: #fbc02d; 
+  color: #fbc02d;
   font-size: 20px;
 }
 
@@ -221,23 +263,24 @@ body{
 
 /*Footer -------------------------------------*/
 
-.curvaFooter{
+.curvaFooter {
   margin-bottom: -5px;
 }
-footer{
+
+footer {
   background-color: #F37335;
 }
 
 
-.primerElementoFooter{
+.primerElementoFooter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 0px  30px 0px;
+  padding: 0px 0px 30px 0px;
 }
 
-.primerElementoFooter p{
-  font-weight:500;
+.primerElementoFooter p {
+  font-weight: 500;
   font-size: 25px;
 }
 
@@ -250,36 +293,38 @@ footer{
   margin-bottom: 10px;
 }
 
-.segundoElementoFooter p{
+.segundoElementoFooter p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight:300;
+  font-weight: 300;
   font-size: 35px;
 }
 
 
-.contenedorIconosFooter{
+.contenedorIconosFooter {
   display: flex;
   justify-content: center;
   font-size: 30px;
   color: white;
 }
 
-.bi, .bi-instagram{
+.bi,
+.bi-instagram {
   margin-right: 40px;
 }
 
-.bi , .bi-facebook{
-margin-left: 40px;
+.bi,
+.bi-facebook {
+  margin-left: 40px;
 }
 
 
-.tercerElementoFooter{
+.tercerElementoFooter {
   margin: 60px 0px 0px 40px;
   padding-bottom: 30px;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
 
 }
@@ -290,10 +335,9 @@ margin-left: 40px;
 
 }
 
-.tercerElementoFooter ul{
-list-style: none;
-padding: 0
-
+.tercerElementoFooter ul {
+  list-style: none;
+  padding: 0
 }
 
 
@@ -303,7 +347,7 @@ padding: 0
 }
 
 
-.contenedorEmpresa{
+.contenedorEmpresa {
   margin-right: 40px;
 
 }
