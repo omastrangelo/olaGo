@@ -25,6 +25,13 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #F37335 ;
+
+}
+
 .container-fluid {
   height: 6rem;
 }
