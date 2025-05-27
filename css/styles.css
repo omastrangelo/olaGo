@@ -57,8 +57,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.heroIndex h1 {
+  color: white;
+  font-size: 8rem;
+  font-weight: 600;
+}
+.heroIndex h2{
+  color: white;
+}
+
+.heroIndex button{
+    color: white;
+    background-color: #F37335;
+    height: 49px;
+    width: 227px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 15px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Sección Informativa - ¿Cómo Funciona? ----------------------*/
 .seccionInformativa1 {
