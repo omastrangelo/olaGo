@@ -11,9 +11,7 @@ body {
   margin-top: 7rem;
 }
 
-
 /* NavBar -----------------------*/
-
 .navbar {
   position: fixed;
   top: 0;
@@ -24,7 +22,6 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
@@ -56,7 +53,6 @@ body {
 }
 
 /*Hero Index*/
-
 .heroIndex {
   width: 100%;
   height: 850px;
@@ -136,7 +132,6 @@ body {
 }
 
 /* Sección Informativa - ¿Por qué OlaGO? ----------------------*/
-
 .seccionInformativa2 {
   display: flex;
   padding: 0rem 12rem 0rem 12rem;
@@ -176,6 +171,49 @@ body {
   color: #333;
 }
 
+/*Sección nosDestacamos -------------------------*/
+.tituloSeccionDestacamos {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5%;
+}
+
+.nosDestacamos {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.imgDestacamos {
+  width: 55%;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.textoBeneficio {
+  width: 50%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #424242;
+}
+
+p {
+  font-size: 0.7rem;
+  color: #424242;
+} 
 
 /* Sección CompartirViaje -----------------------*/
 .CompartirViaje {
@@ -296,12 +334,9 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 00;
 }
-
 /* ------------------------------------------ */
 
 /* Sección Reseñas ------------------------------------------ */
-
-
 .reseñasSeccion {
   display: flex;
   gap: 2rem;
@@ -340,15 +375,9 @@ body {
   color: #fbc02d;
   font-size: 20px;
 }
-
-
-
 /* ------------------------------------------ */
 
-
-
 /*Footer -------------------------------------*/
-
 .curvaFooter {
   margin-bottom: -5px;
 }
@@ -356,7 +385,6 @@ body {
 footer {
   background-color: #F37335;
 }
-
 
 .primerElementoFooter {
   display: flex;
@@ -387,7 +415,6 @@ footer {
   font-size: 35px;
 }
 
-
 .contenedorIconosFooter {
   display: flex;
   justify-content: center;
@@ -405,7 +432,6 @@ footer {
   margin-left: 40px;
 }
 
-
 .tercerElementoFooter {
   margin: 60px 0px 0px 40px;
   padding-bottom: 30px;
@@ -414,7 +440,6 @@ footer {
   align-items: center;
 
 }
-
 
 .tercerElementoFooter h4 {
   color: #686868;
@@ -426,12 +451,10 @@ footer {
   padding: 0
 }
 
-
 .tercerElementoFooter li a {
   color: #ffffff;
   text-decoration: none;
 }
-
 
 .contenedorEmpresa {
   margin-right: 40px;
