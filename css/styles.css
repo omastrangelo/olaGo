@@ -7,6 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
 body {
   margin-top: 7rem;
 }
@@ -111,6 +112,7 @@ body {
 .contenedorComoFunciona p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-size: medium;
 }
 
 .botonComoFunciona {
@@ -125,8 +127,8 @@ body {
 }
 
 .imgInformativa1 {
-  width: 700px;
-  height: 550px;
+  width: 600px;
+  height: auto;
   border-radius: 20px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -134,17 +136,24 @@ body {
 /* Sección Informativa - ¿Por qué OlaGO? ----------------------*/
 .seccionInformativa2 {
   display: flex;
-  padding: 0rem 12rem 0rem 12rem;
+  /* padding: 0rem 12rem 0rem 12rem; */
   align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 3rem;
+  
 }
 
 .imgInformativa2 {
   width: 500px;
-  height: 480px;
+  height: auto;
 }
 
 .contenedorPorQueOlaGo {
-  padding: 8rem;
+  /* padding: 8rem; */
+  width: 100%;
+  max-width: 600px;
 }
 
 .contenedorPorQueOlaGo h2 {
@@ -158,6 +167,10 @@ body {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.razones p {
+    font-size: medium;
 }
 
 .iconosRazones {
@@ -208,10 +221,11 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   color: #424242;
+  margin-bottom: 1rem;
 }
 
 p {
-  font-size: 0.7rem;
+  font-size: medium;
   color: #424242;
 } 
 
@@ -287,7 +301,12 @@ p {
 }
 
 .tarjetaConductor {
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
+  background: #FFB75E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .contenedorPasos {
@@ -349,7 +368,7 @@ p {
   background-color: #ffe5b4;
   /*ver, no me convence todavia */
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem;
   max-width: 300px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
