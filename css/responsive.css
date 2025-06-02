@@ -4,52 +4,102 @@
     flex-direction: column;
     padding: 1.5rem;
   }
-  
+
   .imagenCentro {
-    order: -1; /* muevo la img hacia arriba*/
+    order: -1;
+    /* muevo la img hacia arriba*/
     margin: 1rem 0;
     padding: 0;
   }
-  
+
   .imagenCentro img {
     max-width: 200px;
   }
-  
+
   .columnaPasos {
     gap: 1rem;
+  }
+
+  .seccionInformativa1 {
+    flex-direction: column;
+  }
+
+  .contenedorComoFunciona {
+    padding: 5rem 7rem 3rem 7rem;
+    text-align: center;
+  }
+
+  .botonComoFunciona {
+    margin: auto;
+  }
+
+  .contenedorImgInformativa1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgInformativa1 {
+    width: 60%;
+  }
+
+  .seccionInformativa2 {
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+    gap: 0;
+  }
+
+  .seccionInformativa2 h2 {
+    text-align: center;
   }
 }
 
 /* ParaCelulares */
 
 @media (max-width: 768px) {
+  .seccionInformativa1 {
+    padding: 0;
+  }
+
+  .contenedorImgInformativa1, .contenedorImgInformativa2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgInformativa1 {
+    width: 55%;
+  }
+
+  .imgInformativa2 {
+    width: 50%;
+  }
+
   .CompartirViaje {
     padding: 1.5rem;
   }
-  
+
   .tituloPrincipal {
     font-size: 1.5rem;
   }
-  
+
   .botonUsuario {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     margin: 0 0.3rem;
   }
-  
+
   .paso {
     padding: 1.2rem;
   }
-  
+
   .paso h3 {
     font-size: 1.1rem;
   }
-  
+
   .paso p {
     font-size: 0.85rem;
   }
-  
-  .contenedorContenidoDinamico{
+
+  .contenedorContenidoDinamico {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,34 +112,43 @@
   */
 
   .reseñasSeccion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
+  .imgInformativa1 {
+    width: 70%;
+  }
+
+  .contenedorPorQueOlaGo {
+    flex-direction: column;
+    padding: 0rem 3rem;
+  }
+
   .botonesTipoUsuario {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
   }
-  
+
   .botonUsuario {
     width: 80%;
     margin: 0;
   }
-  
+
   .tarjetaContenido {
     border-radius: 12px;
   }
-  
+
   .paso {
     padding: 1rem;
   }
-  
+
   .icono {
     font-size: 1.8rem;
     margin-bottom: 0.7rem;
@@ -97,16 +156,22 @@
 }
 
 /* muy jerigna para el celular pequeños */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
+
+  .contenedorComoFunciona {
+    padding: 3rem 4rem;
+
+  }
+
   .tituloPrincipal {
     font-size: 1.3rem;
   }
-  
+
   .imagenCentro img {
     max-width: 180px;
   }
-  
+
   .paso {
     padding: 0.8rem;
   }
-}
+} */

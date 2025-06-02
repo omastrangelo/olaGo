@@ -61,7 +61,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +98,7 @@ body {
 }
 
 .contenedorComoFunciona {
-  padding: 8rem;
+  padding: 8rem 3rem;
 }
 
 .contenedorComoFunciona h2 {
@@ -127,7 +126,7 @@ body {
 }
 
 .imgInformativa1 {
-  width: 600px;
+  width: 100%;
   height: auto;
   border-radius: 20px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
@@ -139,14 +138,13 @@ body {
   /* padding: 0rem 12rem 0rem 12rem; */
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
   margin-bottom: 3rem;
   gap: 3rem;
   
 }
 
 .imgInformativa2 {
-  width: 500px;
+  width: 400px;
   height: auto;
 }
 
