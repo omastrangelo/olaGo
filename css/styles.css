@@ -137,12 +137,11 @@ body {
 /* Sección Informativa - ¿Por qué OlaGO? ----------------------*/
 .seccionInformativa2 {
   display: flex;
-  /* padding: 0rem 12rem 0rem 12rem; */
+  padding: 0rem 12rem;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
   gap: 3rem;
-  
 }
 
 .imgInformativa2 {
@@ -151,7 +150,6 @@ body {
 }
 
 .contenedorPorQueOlaGo {
-  /* padding: 8rem; */
   width: 100%;
   max-width: 600px;
 }
