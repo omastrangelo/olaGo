@@ -1,3 +1,53 @@
+/* Media Queries Desktop grande */
+@media (min-width: 1600px) {
+
+  /*Seccion Informativa - Cómo Funciona*/
+  .seccionInformativa1 {
+    margin-top: 10rem;
+  }
+
+  .imgInformativa1 {
+    width: 90%;
+  }
+
+  .contenedorComoFunciona {
+    padding: 8rem;
+  }
+
+  /*Seccion Informativa - Por qué OlaGO*/
+
+  .seccionInformativa2 {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    justify-content: space-evenly;
+  }
+
+  .imgInformativa2 {
+    width: 500px;
+  }
+
+}
+
+/* Media Queries Desktop típica */
+@media (max-width: 1440px) {
+
+  /*Seccion Informativa - Cómo Funciona*/
+  .seccionInformativa1 {
+    margin-top: 3rem;
+  }
+  .contenedorComoFunciona {
+    padding: 4rem, 3rem;
+  }
+
+  /*Seccion Informativa - Por Qué OlaGo*/
+  .seccionInformativa2 {
+    margin-bottom: 4rem;
+    gap: 5rem;
+  }
+
+}
+
+
 /* Media Queries tablet */
 @media (max-width: 992px) {
 
