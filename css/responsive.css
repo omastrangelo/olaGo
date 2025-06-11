@@ -220,6 +220,98 @@
     font-size: 1.7rem;
   }
 
+  .heroPasajeroPage {
+    height: 400px;
+    margin-top: 5rem;
+  }
+  .heroPasajeroPage h1 {
+    font-size: 6rem;
+  }
+  .heroPasajeroPage h2 {
+    font-size: 1.5rem;
+    max-width: 500px;
+  }
+  .heroPasajeroPage button {
+    height: 40px;
+    width: 180px;
+    font-size: 1rem;
+  }
+
+  .containerBuscador {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .text-image {
+    max-width: 100%;
+  }
+
+  .text-image h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-image img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-box {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .form-box form {
+    gap: 0.8rem;
+  }
+
+  .form-box label {
+    font-size: 0.85rem;
+  }
+
+  .form-box input[type="text"],
+  .form-box input[type="date"] {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .checkboxes {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  /* creo que la seccion de la cards ya está responsive */
+
+  /* seccion de .Faqs */
+  .Faqs {
+    padding: 1rem 0.5rem;
+  }
+
+  .Faqs h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .accordion {
+    margin-bottom: 1rem;
+  }
+
+  .accordion-item {
+    margin-bottom: 1rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+
 
 }
 
@@ -278,6 +370,9 @@
   h4 {
     font-size: large;
   }
+
+
+
 
 }
 

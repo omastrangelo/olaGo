@@ -1,0 +1,42 @@
+[
+  {
+    "origen": "Olavarría",
+    "destino": "Mar del Plata",
+    "fecha": "Sáb. 10 mayo",
+    "hora": "13:30hs",
+    "asientos": 3,
+    "conductor": "Cesar Millan",
+    "contacto": "+54 6756789",
+    "precio": 10000
+  },
+  {
+    "origen": "Olavarría",
+    "destino": "Benito Juarez",
+    "fecha": "Sáb. 5 junio",
+    "hora": "11:40hs",
+    "asientos": 2,
+    "conductor": "Emiliano Tester",
+    "contacto": "+54 6756789",
+    "precio": 18000
+  },
+  {
+    "origen": "Olavarría",
+    "destino": "Santa Rosa",
+    "fecha": "Sáb. 2 julio",
+    "hora": "10:30hs",
+    "asientos": 1,
+    "conductor": "Clara Tonina",
+    "contacto": "+54 6756789",
+    "precio": 25000
+  },
+  {
+    "origen": "Olavarría",
+    "destino": "Tandil",
+    "fecha": "Sáb. 15 agosto",
+    "hora": "14:30hs",
+    "asientos": 2,
+    "conductor": "Cesar Millan",
+    "contacto": "+54 6756789",
+    "precio": 13000
+  }
+]
