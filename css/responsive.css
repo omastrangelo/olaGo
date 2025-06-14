@@ -136,7 +136,20 @@
     text-align: center;
   }
 
-  /*---*/
+  /*registerpage*/
+
+  .register-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    order: -1;
+    height: 300px;
+  }
+
+  .form-section {
+    padding: 40px 20px;
+  }
 }
 
 /* ParaCelulares */
@@ -369,6 +382,22 @@
   .contenedorCompartirAuto,
   h4 {
     font-size: large;
+  }
+
+  /* registerPage */
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    padding: 12px;
+  }
+
+  .form-section h2 {
+    font-size: 22px;
   }
 
 
