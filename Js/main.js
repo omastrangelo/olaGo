@@ -84,6 +84,18 @@ function renderizarConductor() {
 
 // --------------------------------------------------
 
+// lógica para mostrar y ocultar password 
+
+const passwordInput = document.getElementById("passwordInput");
+const togglePassword = document.getElementById("togglePassword");
+
+if (passwordInput && togglePassword) {
+  togglePassword.addEventListener("click", () => {
+    const isPassword = passwordInput.type === "password";
+    passwordInput.type = isPassword ? "text" : "password";
+    togglePassword.textContent = isPassword ? "👁️" : "◠";
+  });
+}
 
 
 // todos los eventos que tengamos ---------------

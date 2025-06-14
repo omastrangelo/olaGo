@@ -53,6 +53,14 @@ body {
   border-radius: 15px;
   margin: 0rem 4rem 0rem 0rem;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonNavBar a {
+  text-decoration: none;
+  color: white;
 }
 
 /*Hero Index*/
@@ -252,6 +260,7 @@ p {
 
 .botonUsuario {
   background-color: white;
+  color: #000;
   border: 1px solid #ccc;
   padding: 0.6rem 1.2rem;
   margin: 0 0.5rem;
@@ -299,10 +308,9 @@ p {
 }
 
 .tarjetaConductor {
-  /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
-  background: #FFB75E;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFB75E;  
+  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  
+  background: linear-gradient(to right, #ED8F03, #FFB75E);
 
 
 }
@@ -401,6 +409,7 @@ p {
 
 footer {
   background-color: #F37335;
+  
 }
 
 .primerElementoFooter {
@@ -408,6 +417,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 0px 0px 30px 0px;
+  
 }
 
 .primerElementoFooter p {
@@ -713,6 +723,99 @@ button:hover {
 }
 .text-orange {
   color: #f26c21;
+}
+
+
+/* RegisterPage */
+
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* FORM SECTION */
+.form-section {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.input-form {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #f26c21;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #3d74f2;
+  text-decoration: none;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  margin-top: 1rem;
+}
+
+.image-section img {
+  max-width: 400px;
+  height: auto;
 }
 
 
