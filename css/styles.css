@@ -820,3 +820,50 @@ button[type="submit"] {
 }
 
 
+/* page not found styles --------------------------- */
+
+.SectionMensaje404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contenedor404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1220px;
+  text-align: center;
+}
+
+.contenedor404 img {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  height: auto;
+}
+
+.contenedor404 h1 {
+  margin: 1rem 0 0.5rem;
+}
+
+.contenedor404 p {
+  margin-bottom: 1.5rem;
+}
+
+.boton404 {
+  color: white;
+  background-color: #F37335;
+  height: 43px;
+  width: 156px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
