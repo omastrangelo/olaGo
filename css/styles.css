@@ -490,6 +490,7 @@ footer {
 .valoresEmpresa {
   display: flex;
   justify-content: center;
+  margin-top: 5%;
 }
 
 .tituloValores {
@@ -522,6 +523,10 @@ footer {
 
 .oracionValores {
   font-size: 0.9rem;
+}
+
+.equipo {
+  margin-top: 5%;
 }
 
 .integrante {
