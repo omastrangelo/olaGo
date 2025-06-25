@@ -887,7 +887,7 @@ button[type="submit"] {
   max-width: 400px;
   height: auto;
 
-
+}
 /* page not found styles --------------------------- */
 
 .SectionMensaje404 {
@@ -935,4 +935,3 @@ button[type="submit"] {
   cursor: pointer;
   text-decoration: none;
 }
-
