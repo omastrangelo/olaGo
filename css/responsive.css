@@ -329,6 +329,30 @@
   }
 
 
+  /*---*/
+
+  .sectionMensaje404 {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor404 img{
+    width: 80%;
+  }
+
+  .contenedor404 h1{
+    font-size: 2rem;
+  }
+  
+  .contenedor404 p{
+    font-size: 1rem;
+  }
+
+
+
 
 }
 
