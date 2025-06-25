@@ -176,7 +176,7 @@ body {
 }
 
 .razones p {
-    font-size: medium;
+  font-size: medium;
 }
 
 .iconosRazones {
@@ -233,7 +233,7 @@ h2 {
 p {
   font-size: medium;
   color: #424242;
-} 
+}
 
 /* Sección CompartirViaje -----------------------*/
 .CompartirViaje {
@@ -308,8 +308,8 @@ p {
 }
 
 .tarjetaConductor {
-  background: #FFB75E;  
-  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  
+  background: #FFB75E;
+  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
   background: linear-gradient(to right, #ED8F03, #FFB75E);
 
 
@@ -359,9 +359,8 @@ p {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 00;
 }
-/* ------------------------------------------ */
 
-/* Sección Reseñas ------------------------------------------ */
+/* Sección Reseñas -------------------------- */
 .reseñasSeccion {
   display: flex;
   gap: 2rem;
@@ -400,7 +399,6 @@ p {
   color: #fbc02d;
   font-size: 20px;
 }
-/* ------------------------------------------ */
 
 /*Footer -------------------------------------*/
 .curvaFooter {
@@ -409,7 +407,7 @@ p {
 
 footer {
   background-color: #F37335;
-  
+
 }
 
 .primerElementoFooter {
@@ -417,7 +415,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 0px 0px 30px 0px;
-  
+
 }
 
 .primerElementoFooter p {
@@ -488,22 +486,92 @@ footer {
 
 }
 
-/*Soy PasajeroPage -------------------------------------*/
+/*PAGE: quienesSomos ---------------------------------------------------------------------------------------------*/
+.valoresEmpresa {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.tituloValores {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #F37335;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.textoValoresEmpresa {
+  width: 30%;
+  text-align: left;
+  flex-direction: column;
+}
+
+.valoresResaltados {
+  font-weight: bold;
+}
+
+
+.imgTeamQuienesSomos {
+  width: 30%;
+  margin-left: 7%;
+}
+
+.valores {
+  font-size: 0.95rem;
+}
+
+.oracionValores {
+  font-size: 0.9rem;
+}
+
+.equipo {
+  margin-top: 5%;
+}
+
+.integrante {
+  display: flex;
+  align-items: center;
+}
+
+.textoIntegrante {
+  flex-direction: column;
+}
+
+.nombres {
+  font-weight: bold;
+}
+
+.imgIntegrante {
+  width: 35%;
+  border-radius: 47%;
+  margin-right: 2%;
+}
+
+.grupo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+
+/*Soy PasajeroPage ----------------------------------------------------------------------------------------------------------------------*/
 
 .heroPasajeroPage {
   width: 100%;
   height: 650px;
-  background-image: url('../img/HeroPasajero.jpeg') ;
+  background-image: url('../img/HeroPasajero.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-   /* background-opacity: 0.9; */
+  /* background-opacity: 0.9; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 7rem;
-  
+
 }
 
 .heroPasajeroPage h1 {
@@ -556,7 +624,8 @@ footer {
 }
 
 .highlight {
-  color: #f57c00; /* naranja suave */
+  color: #f57c00;
+  /* naranja suave */
 }
 
 .text-image img {
@@ -576,7 +645,7 @@ footer {
   padding: 2rem;
   border-radius: 20px;
   width: 500px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-box form {
@@ -643,6 +712,7 @@ button:hover {
 .destacado {
   color: #f57c00;
 }
+
 .viaje-card {
   border: 2px solid #f26c21;
   border-radius: 16px;
@@ -721,13 +791,12 @@ button:hover {
   max-width: 900px;
   margin: 2rem auto;
 }
+
 .text-orange {
   color: #f26c21;
 }
 
-
-/* RegisterPage */
-
+/* RegisterPage -----------------------------------------------------------------------------------------------------------------*/
 
 .register-container {
   display: flex;
@@ -817,7 +886,6 @@ button[type="submit"] {
 .image-section img {
   max-width: 400px;
   height: auto;
-}
 
 
 /* page not found styles --------------------------- */
@@ -867,3 +935,4 @@ button[type="submit"] {
   cursor: pointer;
   text-decoration: none;
 }
+
