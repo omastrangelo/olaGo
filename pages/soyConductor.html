@@ -34,13 +34,13 @@
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/quienesSomos.htm">¿Quiénes somos?</a>
+                        <a class="nav-link" href="../pages/quienesSomos.html">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/soyConductor.html">Soy conductor</a>
+                        <a class="nav-link active" href="../pages/soyConductor.html">Soy conductor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./pages/soyPasajero.html">Soy pasajero</a>
+                        <a class="nav-link" href="../pages/soyPasajero.html">Soy pasajero</a>
                     </li>
 
                 </ul>
@@ -60,15 +60,82 @@
         </div>
     </section>
 
-    
- <section class="cargarViaje">
-    <h4>Estás a punto de <span class="cargarViajeResaltado">cargar un nuevo viaje</span>.</h4>
-    <p>Por favor, tene en cuenta todos los datos obligatorios para cargar tu viaje, Corroborá la información antes de
-        publicarlo y esperá las notificaciones de reserva.</p>
+    <!-- Formulario carga de viaje -->
+    <section class="publicarViaje">
+        <div class="textoPublicarViaje">
+            <h5>Estás a punto de <span class="resaltarTextoViaje">cargar un nuevo viaje.</span></h5>
+            <p>
+                Por favor, tene en cuenta todos los datos obligatorios para cargar tu viaje, Corroborá la información
+                antes de publicarlo y esperá las notificaciones de reserva</p>
+        </div>
 
-    <!-- Form -->
-    <!-- Imagen auto -->
-</section>
+        <form>
+            <div class="campo">
+                <label>Lugar de salida *</label>
+                <input type="text" placeholder="Ingrese ciudad de salida">
+            </div>
+
+            <div class="campo">
+                <label>Lugar de destino *</label>
+                <input type="text" placeholder="Ingrese ciudad de destino">
+            </div>
+
+
+            <div class="campo">
+                <label>Hora de salida *</label>
+                <input type="number" placeholder="Ingrese hora de salida">
+            </div>
+
+            <div class="campo">
+                <label>Fecha de salida *</label>
+                <input type="text" placeholder="Ingrese fecha de salida">
+            </div>
+
+            <div class="campo">
+                <label>Lugar de salida *</label>
+                <input type="text" placeholder="Ingrese ciudad de salida">
+            </div>
+
+            <div class="campo">
+                <label>Email *</label>
+                <input type="email" placeholder="Ingrese su email">
+            </div>
+
+            <div class="campo">
+                <label>Celular *</label>
+                <input type="number" placeholder="Ingrese su celular">
+            </div>
+
+            <div class="campo">
+                <label>Descripción breve de su vehículo *</label>
+                <input type="text" placeholder="Marca, modelo, etc.">
+            </div>
+
+            <div class="campo">
+                <label>Asientos disponibles *</label>
+                <input type="number" placeholder="Ingrese cantidad de asientos libres">
+            </div>
+
+            <div class="campo">
+                <label>¿Acepta mascotas? *</label>
+                <input type="text" placeholder="Por sí o por no">
+            </div>
+
+            <div class="checkboxViaje">
+                <input type="checkbox">
+                <label>Acepto términos y condiciones.</label>
+            </div>
+
+            <button type="submit">Publicar viaje</button>
+        </form>
+    <img class="publicarViajeImg" src="../img/CompartirViajeCard2.png" alt="">
+    </section>
+
+
+
+    <!-- imagen -->
+
+
     <!-- Preguntas frecuentes ------------------------------------------------------------------->
     <section class="Faqs">
         <h2 class="fw-bold text-orange mb-3">¿Cómo funciona ser conductor?</h2>
