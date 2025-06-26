@@ -935,3 +935,19 @@ button[type="submit"] {
   cursor: pointer;
   text-decoration: none;
 }
+
+
+/* Page Soy Conductor */
+.cargarViaje {
+   justify-content: center;
+   width: 100%;
+}
+
+h4 {
+  font-weight: bold;
+
+}
+
+.cargarViajeResaltado {
+  
+}
