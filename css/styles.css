@@ -360,9 +360,7 @@ p {
   font-weight: 00;
 }
 
-/* ------------------------------------------ */
-
-/* Sección Reseñas ------------------------------------------ */
+/* Sección Reseñas -------------------------- */
 .reseñasSeccion {
   display: flex;
   gap: 2rem;
@@ -401,8 +399,6 @@ p {
   color: #fbc02d;
   font-size: 20px;
 }
-
-/* ------------------------------------------ */
 
 /*Footer -------------------------------------*/
 .curvaFooter {
@@ -490,7 +486,77 @@ footer {
 
 }
 
-/*Soy PasajeroPage -------------------------------------*/
+/*PAGE: quienesSomos ---------------------------------------------------------------------------------------------*/
+.valoresEmpresa {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.tituloValores {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #F37335;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.textoValoresEmpresa {
+  width: 30%;
+  text-align: left;
+  flex-direction: column;
+}
+
+.valoresResaltados {
+  font-weight: bold;
+}
+
+
+.imgTeamQuienesSomos {
+  width: 30%;
+  margin-left: 7%;
+}
+
+.valores {
+  font-size: 0.95rem;
+}
+
+.oracionValores {
+  font-size: 0.9rem;
+}
+
+.equipo {
+  margin-top: 5%;
+}
+
+.integrante {
+  display: flex;
+  align-items: center;
+}
+
+.textoIntegrante {
+  flex-direction: column;
+}
+
+.nombres {
+  font-weight: bold;
+}
+
+.imgIntegrante {
+  width: 35%;
+  border-radius: 47%;
+  margin-right: 2%;
+}
+
+.grupo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+
+/*Soy PasajeroPage ----------------------------------------------------------------------------------------------------------------------*/
 
 .heroPasajeroPage {
   width: 100%;
@@ -730,9 +796,7 @@ button:hover {
   color: #f26c21;
 }
 
-
-/* RegisterPage */
-
+/* RegisterPage -----------------------------------------------------------------------------------------------------------------*/
 
 .register-container {
   display: flex;
@@ -822,9 +886,8 @@ button[type="submit"] {
 .image-section img {
   max-width: 400px;
   height: auto;
+
 }
-
-
 /* page not found styles --------------------------- */
 
 .SectionMensaje404 {
