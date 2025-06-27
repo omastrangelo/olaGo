@@ -927,7 +927,7 @@ button[type="submit"] {
   max-width: 400px;
   height: auto;
 
-
+}
 /* page not found styles --------------------------- */
 
 .SectionMensaje404 {
@@ -975,4 +975,81 @@ button[type="submit"] {
   cursor: pointer;
   text-decoration: none;
 }
+
+
+/* Page Soy Conductor */
+.publicarViaje {
+  padding-top:5%;
+    max-width: 100%;
+  width: 60%;
+  margin: 0 auto;
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.publicarViaje form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.campo {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.campo input {
+  padding: 0.6rem;
+  border: 1px solid #eee;
+  border-radius: 0.4rem;
+  background-color: #fafafa;
+  font-size: 1rem;
+}
+
+.checkboxViaje {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.checkboxViaje input[type="checkbox"] {
+  margin-right: 0.6rem;
+}
+
+.publicarViaje button {
+  width: 25%;
+}
+
+.textoPublicarViaje h5{
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+
+.textoPublicarViaje p {
+  padding-bottom: 7%;
+}
+
+.resaltarTextoViaje {
+  color: #e66c00;
+}
+
+.publicarViajeImg {
+  justify-content: center;
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  align-items: center;
 }
