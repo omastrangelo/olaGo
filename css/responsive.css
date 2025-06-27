@@ -452,6 +452,45 @@
     width: 110%;
   }
 
+
+  /* Page quienes somos -------------------------------------------------*/
+    .grupo {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .integrante {
+    flex-direction: column;    /* imagen arriba, texto abajo */
+    text-align: center;
+  }
+
+  .imgIntegrante {
+    margin-bottom: 0.5rem;
+  }
+
+  .valoresEmpresa {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textoValoresEmpresa {
+    width: 90%;
+    text-align: center;
+  }
+
+  .imgTeamQuienesSomos {
+    width: 80%;
+    margin-top: 1.5rem;
+  }
+
+  .tituloValores {
+    font-size: 1.3rem;
+  }
+
+  .oracionValores {
+    font-size: 0.95rem;
+  }
 }
 
 
