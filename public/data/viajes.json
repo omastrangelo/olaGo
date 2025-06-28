@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "origen": "Olavarría",
     "destino": "Mar del Plata",
     "fecha": "Sáb. 10 mayo",
@@ -10,6 +11,7 @@
     "precio": 10000
   },
   {
+    "id": 2,
     "origen": "Olavarría",
     "destino": "Benito Juarez",
     "fecha": "Sáb. 5 junio",
@@ -20,6 +22,7 @@
     "precio": 18000
   },
   {
+    "id": 3,
     "origen": "Olavarría",
     "destino": "Santa Rosa",
     "fecha": "Sáb. 2 julio",
@@ -30,6 +33,7 @@
     "precio": 25000
   },
   {
+    "id": 4,
     "origen": "Olavarría",
     "destino": "Tandil",
     "fecha": "Sáb. 15 agosto",

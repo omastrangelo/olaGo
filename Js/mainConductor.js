@@ -1,21 +1,22 @@
-// Lógica para renderizar los últimos viajes agregados con info hardcodeada ------------------------
+// Lógica para renderizar los viajes hardcodeados ------------------------
 
 const viajesConductor = document.getElementById("viajes-conductor");
 
 async function cargarYRenderizarViajes() {
     try {
-        //me traigo todos los datos harcodeados del json
-        const response = await fetch("../public/data/viajes.json");
-        //guardamos en una variable los viajes con la data del json
-        const viajes = await response.json();
-
-        //para tenerlo en cuenta después, en este caso ya sabemos que temos info hardcodeada
+        let viajes = JSON.parse(localStorage.getItem("viajes"));
+        // Si no hay viajes guardados, cargamos del JSON y los guardamos
+        if (!viajes || !Array.isArray(viajes) || viajes.length === 0) {
+    const response = await fetch("../public/data/viajes.json");
+    viajes = await response.json();
+    localStorage.setItem("viajes", JSON.stringify(viajes));
+}
         if (viajes.length === 0) {
             viajesConductor.innerHTML = "<p>No tenés viajes publicados por el momento.</p>";
             return;
         }
 
-        //el conteiner de los viajes y mapeamos el json, por cada uno creamos una card de viaje
+        // Renderizamos
         viajesConductor.innerHTML = viajes
             .map(
                 (viaje) => `
@@ -31,9 +32,10 @@ async function cargarYRenderizarViajes() {
                    <div class="viaje-detalles">
                    <p>Asientos disponibles: ${viaje.asientos}</p>
                    </div>
-                   <div class="viaje-precio">
-                   <p><strong>$${viaje.precio.toLocaleString("es-AR")}</strong></p>
+                   <div class="container-btnConductor">
                    <button class="btn-asiento">Editar viaje</button>
+                   <button class="btn-eliminar" onclick="eliminarViaje(${viaje.id})">Eliminar viaje</button>
+                   </div>
                    </div>
                  </div>
                 </div>
@@ -46,5 +48,16 @@ async function cargarYRenderizarViajes() {
     }
 }
 
-// Al cargarse la pag se ejecuta la fn
+// Al cargar la página renderiza las cards
 cargarYRenderizarViajes();
+
+// Eliminar viaje
+function eliminarViaje(id) { //Se recibe el id del viaje a eliminar
+  let viajes = JSON.parse(localStorage.getItem("viajes")) || []; //Se trae el array desde localStorage
+  viajes = viajes.filter(v => v.id !== id); //Se filtra el array para eliminar el viaje con ese id
+  localStorage.setItem("viajes", JSON.stringify(viajes)); //Se guarda el nuevo array en localStorage
+  cargarYRenderizarViajes(); //Se vuelve a llamar a cargarYRenderizarViajes() para actualizar la vista
+}
+
+
+
