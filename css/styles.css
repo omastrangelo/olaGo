@@ -1095,3 +1095,14 @@ button[type="submit"] {
 .botonMiPerfil:hover {
   background-color: #e76666;
 }
+
+.botonMiPerfil a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.botonMiPerfil a,
+.botonMiPerfil a:visited {
+  text-decoration: none;
+  color: white;
+}
