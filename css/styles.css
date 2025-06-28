@@ -1054,6 +1054,22 @@ button[type="submit"] {
   align-items: center;
 }
 
+.btn-eliminar {
+  background-color: #d12929;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-eliminar:hover{
+  background-color: #a51f1f;
+
+}
+
 /*  Mi perfil  */
 
 
