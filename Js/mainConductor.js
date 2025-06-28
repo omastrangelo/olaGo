@@ -32,6 +32,9 @@ async function cargarYRenderizarViajes() {
                    <div class="viaje-detalles">
                    <p>Asientos disponibles: ${viaje.asientos}</p>
                    </div>
+                   <div class="viaje-precio">
+                    <p><strong>$${viaje.precio.toLocaleString("es-AR")}</strong></p>
+                    </div>
                    <div class="container-btnConductor">
                    <button class="btn-asiento"><a href="./editarViaje.html">Editar viaje</a></button>
                    <button class="btn-eliminar" onclick="eliminarViaje(${viaje.id})">Eliminar viaje</button>
