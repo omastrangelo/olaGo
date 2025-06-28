@@ -824,7 +824,16 @@ button:hover {
   font-size: 14px;
   font-weight: bold;
 }
+ .btn-asiento a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.btn-asiento a,
+.btn-asiento a:visited {
+  text-decoration: none;
+  color: white;
+}
 
 .Faqs {
   width: 100%;
