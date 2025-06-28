@@ -1063,6 +1063,7 @@ button[type="submit"] {
   align-items: center;
 }
 
+
 .viaje-botones {
   display: flex;
   justify-content: center;
@@ -1146,4 +1147,42 @@ button[type="submit"] {
 .botonMiPerfil a:visited {
   text-decoration: none;
   color: white;
+}
+
+/*Editar Viaje*/
+
+.container-btn-form{
+  display: flex;
+  gap: 30px;
+}
+.btn-volver {
+  border: none;
+  background: grey;
+  font-weight: 700;
+  color: white;
+}
+
+.btn-volver:hover,
+.btn-volver:active,
+.btn-volver:focus {
+  background: #737070;
+  color: white;    
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-guardar {
+  background-color: #e76666;
+  border: none;
+  font-weight: 700;
+  color: white;
+}
+
+.btn-guardar:hover,
+.btn-guardar:active,
+.btn-guardar:focus {
+  background-color: #d65f1d;
+  color: white;        /* <- aseguramos que no se vuelva blanco */
+  outline: none;
+  box-shadow: none;
 }
