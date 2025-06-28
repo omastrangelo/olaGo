@@ -301,7 +301,7 @@
     font-size: 0.9rem;
   }
 
-  /* creo que la seccion de la cards ya está responsive */
+  /* La seccion de la cards ya está responsive */
 
   /* seccion de .Faqs */
   .Faqs {
@@ -356,14 +356,38 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 576px) {
-  .imgInformativa1 {
-    width: 70%;
+    /*Seccion Informativa*/
+  .seccionInformativa1 {
+    padding: 0;
   }
 
-  .contenedorPorQueOlaGo {
-    flex-direction: column;
-    padding: 0rem 3rem;
+  .contenedorImgInformativa1 {
+    display: flex;
+    justify-content: center;
   }
+
+  .contenedorImgInformativa2 {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+  }
+
+  .contenedorPorQueOlaGo h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contenedorPorQueOlaGo,
+  .razones,
+  .iconosRazones,
+  .tituloRazones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Sección CompartirViaje */
 
   .botonesTipoUsuario {
     display: flex;
