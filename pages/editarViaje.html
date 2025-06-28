@@ -59,9 +59,55 @@
     <section id="ultimos-viajes">
         <h2><span class="subrayado">Editar</span> <span class="destacado">mi viaje</span></h2>
         <div id="viaje-editar"></div>
+    <form id="formEditar" class="container mt-5 p-4 border rounded bg-light shadow-sm">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="origen" class="form-label">Origen</label>
+            <input type="text" id="origen" name="origen" class="form-control" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="destino" class="form-label">Destino</label>
+            <input type="text" id="destino" name="destino" class="form-control" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="text" id="fecha" name="fecha" class="form-control" placeholder="Ej: Sáb. 10 mayo" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="hora" class="form-label">Hora</label>
+            <input type="text" id="hora" name="hora" class="form-control" placeholder="Ej: 13:30hs" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="asientos" class="form-label">Asientos disponibles</label>
+            <input type="number" id="asientos" name="asientos" class="form-control" min="1" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="conductor" class="form-label">Conductor</label>
+            <input type="text" id="conductor" name="conductor" class="form-control" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="contacto" class="form-label">Contacto</label>
+            <input type="text" id="contacto" name="contacto" class="form-control" />
+          </div>
+      
+          <div class="col-12 col-md-6">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" id="precio" name="precio" class="form-control" min="0" step="1000" />
+          </div>
+      
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Guardar cambios</button>
+          </div>
+        </div>
+      </form>
     </section>
-    
-
+      
     <!-- Footer---------------------------------------------------------------------------------->
 
     <div class="curvaFooter">
@@ -107,5 +153,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../Js/mainConductor.js"></script>
+    <script src="../Js/mainEditarViaje.js"></script>
 </body>
+</html>

@@ -1,49 +1,44 @@
-const viajeAEditar = document.getElementById("viaje-editar");
+const form = document.getElementById("formEditar");
 
-async function cargarYRenderizarViajeEditar() {
-    try {
-        let viajes = JSON.parse(localStorage.getItem("viajes"));
-        // Si no hay viajes guardados, cargamos del JSON y los guardamos
-        if (!viajes || !Array.isArray(viajes) || viajes.length === 0) {
-            const response = await fetch("../public/data/viajes.json");
-            viajes = await response.json();
-            localStorage.setItem("viajes", JSON.stringify(viajes));
-        }
-        /* if (viajes.length === 0) {
-            viajesConductor.innerHTML = "<p>No tenés viajes publicados por el momento.</p>";
-            return;
-        } */
+if (!form) {
+  console.error("No se encontró el formulario");
+  // No uses return fuera de función
+} else {
+  const id = parseInt(localStorage.getItem("idViajeEditar"));
+  if (!id) {
+    alert("No se encontró el viaje a editar.");
+    window.location.href = "./index.html";
+  }
 
-        // Renderizamos
-        viajeAEditar.innerHTML = viajes
-            .map(
-                (viaje) => `
-                <div class="viaje-card">
-                 <div class="viaje-header">
-                  <h3>${viaje.origen} - ${viaje.destino}</h3>
-                 </div>
-                 <div class="viaje-body">
-                  <div class="viaje-info">
-                   <p class="viaje-fecha">${viaje.fecha}</p>
-                   <p class="viaje-hora">${viaje.hora}</p>
-                   </div>
-                   <div class="viaje-detalles">
-                   <p>Asientos disponibles: ${viaje.asientos}</p>
-                   </div>
-                   <div class="container-btnConductor">
-                   <button class="btn-asiento">Guardar</button>
-                   </div>
-                   </div>
-                 </div>
-                </div>
-            `
-            )
-            .join("");
-    } catch (error) {
-        console.error("Error al cargar el viaje:", error);
-        viajeAEditar.innerHTML = "<p>Ocurrió un error al cargar el viaje.</p>";
-    }
+  let viajes = JSON.parse(localStorage.getItem("viajes")) || [];
+  const viaje = viajes.find((v) => v.id === id);
+
+  if (!viaje) {
+    alert("Viaje no encontrado.");
+    window.location.href = "./index.html";
+  }
+
+  const campos = ["origen", "destino", "fecha", "hora", "asientos", "conductor", "contacto", "precio"];
+
+  campos.forEach((campo) => {
+    form[campo].value = viaje[campo];
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    campos.forEach((campo) => {
+      viaje[campo] = form[campo].type === "number"
+        ? parseFloat(form[campo].value)
+        : form[campo].value;
+    });
+
+    const index = viajes.findIndex((v) => v.id === id);
+    viajes[index] = viaje;
+
+    localStorage.setItem("viajes", JSON.stringify(viajes));
+    alert("Viaje actualizado correctamente.");
+    window.location.href = "./soyConductor.html";
+  });
 }
 
-// Al cargar la página renderiza las cards
-cargarYRenderizarViajeEditar();

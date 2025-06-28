@@ -36,7 +36,7 @@ async function cargarYRenderizarViajes() {
                     <p><strong>$${viaje.precio.toLocaleString("es-AR")}</strong></p>
                     </div>
                    <div class="container-btnConductor">
-                   <button class="btn-asiento"><a href="./editarViaje.html">Editar viaje</a></button>
+                   <button class="btn-editar" data-id="${viaje.id}">Editar viaje</button>
                    <button class="btn-eliminar" onclick="eliminarViaje(${viaje.id})">Eliminar viaje</button>
                    </div>
                    </div>
@@ -61,3 +61,11 @@ function eliminarViaje(id) { //Se recibe el id del viaje a eliminar
   localStorage.setItem("viajes", JSON.stringify(viajes)); //Se guarda el nuevo array en localStorage
   cargarYRenderizarViajes(); //Se vuelve a llamar a cargarYRenderizarViajes() para actualizar la vista
 }
+// Editar Viajes
+viajesConductor.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btn-editar")) {
+      const id = e.target.dataset.id;
+      localStorage.setItem("idViajeEditar", id);
+      window.location.href = "./editarViaje.html";
+    }
+  });
