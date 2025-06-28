@@ -7,10 +7,10 @@ async function cargarYRenderizarViajes() {
         let viajes = JSON.parse(localStorage.getItem("viajes"));
         // Si no hay viajes guardados, cargamos del JSON y los guardamos
         if (!viajes || !Array.isArray(viajes) || viajes.length === 0) {
-    const response = await fetch("../public/data/viajes.json");
-    viajes = await response.json();
-    localStorage.setItem("viajes", JSON.stringify(viajes));
-}
+            const response = await fetch("../public/data/viajes.json");
+            viajes = await response.json();
+            localStorage.setItem("viajes", JSON.stringify(viajes));
+        }
         if (viajes.length === 0) {
             viajesConductor.innerHTML = "<p>No tenés viajes publicados por el momento.</p>";
             return;
@@ -35,12 +35,13 @@ async function cargarYRenderizarViajes() {
                    <div class="viaje-precio">
                     <p><strong>$${viaje.precio.toLocaleString("es-AR")}</strong></p>
                     </div>
-                   <div class="container-btnConductor">
-                   <button class="btn-editar" data-id="${viaje.id}">Editar viaje</button>
-                   <button class="btn-eliminar" onclick="eliminarViaje(${viaje.id})">Eliminar viaje</button>
-                   </div>
-                   </div>
-                 </div>
+                 </div> 
+                 <div class="viaje-botones">
+                  <div class="container-btnConductor">
+                     <button class="btn-editar" data-id="${viaje.id}">Editar viaje</button>
+                     <button class="btn-eliminar" onclick="eliminarViaje(${viaje.id})">Eliminar viaje</button>
+                  </div>
+                 </div>                
                 </div>
             `
             )
@@ -56,16 +57,16 @@ cargarYRenderizarViajes();
 
 // Eliminar viaje
 function eliminarViaje(id) { //Se recibe el id del viaje a eliminar
-  let viajes = JSON.parse(localStorage.getItem("viajes")) || []; //Se trae el array desde localStorage
-  viajes = viajes.filter(v => v.id !== id); //Se filtra el array para eliminar el viaje con ese id
-  localStorage.setItem("viajes", JSON.stringify(viajes)); //Se guarda el nuevo array en localStorage
-  cargarYRenderizarViajes(); //Se vuelve a llamar a cargarYRenderizarViajes() para actualizar la vista
+    let viajes = JSON.parse(localStorage.getItem("viajes")) || []; //Se trae el array desde localStorage
+    viajes = viajes.filter(v => v.id !== id); //Se filtra el array para eliminar el viaje con ese id
+    localStorage.setItem("viajes", JSON.stringify(viajes)); //Se guarda el nuevo array en localStorage
+    cargarYRenderizarViajes(); //Se vuelve a llamar a cargarYRenderizarViajes() para actualizar la vista
 }
 // Editar Viajes
 viajesConductor.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-editar")) {
-      const id = e.target.dataset.id;
-      localStorage.setItem("idViajeEditar", id);
-      window.location.href = "./editarViaje.html";
+        const id = e.target.dataset.id;
+        localStorage.setItem("idViajeEditar", id);
+        window.location.href = "./editarViaje.html";
     }
-  });
+});

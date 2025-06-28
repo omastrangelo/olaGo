@@ -100,6 +100,17 @@ body {
   align-items: center;
 }
 
+.heroIndex button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heroIndex button a,
+.heroIndex button a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 /* Sección Informativa - ¿Cómo Funciona? ----------------------*/
 .seccionInformativa1 {
   display: flex;
@@ -824,16 +835,6 @@ button:hover {
   font-size: 14px;
   font-weight: bold;
 }
- .btn-asiento a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.btn-asiento a,
-.btn-asiento a:visited {
-  text-decoration: none;
-  color: white;
-}
 
 .Faqs {
   width: 100%;
@@ -1058,9 +1059,24 @@ button[type="submit"] {
   justify-content: center;
   width: 60%;
   margin-top: 10%;
-  margin-bottom: 10%;
   margin-left: 15%;
   align-items: center;
+}
+
+.viaje-botones {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-editar {
+  background-color: #f26c21;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .btn-eliminar {
