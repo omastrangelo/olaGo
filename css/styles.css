@@ -1053,3 +1053,45 @@ button[type="submit"] {
   margin-left: 15%;
   align-items: center;
 }
+
+/*  Mi perfil  */
+
+
+.hero-miPerfil {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* espacio entre imagen e info */
+  padding: 2rem;
+
+  flex-wrap: wrap; /* responsivo */
+}
+
+.imgMiPerfil {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #F37335;
+}
+
+.infoMiPerfil {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* espacio entre nombre, mail y botones */
+
+}
+
+
+.botonMiPerfil {
+  background-color: #F37335;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonMiPerfil:hover {
+  background-color: #e76666;
+}
