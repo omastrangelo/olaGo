@@ -27,6 +27,7 @@
   }
 
 }
+
 /*------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Media Queries Desktop típica */
 @media (max-width: 1440px) {
@@ -339,15 +340,15 @@
     align-items: center;
   }
 
-  .contenedor404 img{
+  .contenedor404 img {
     width: 80%;
   }
 
-  .contenedor404 h1{
+  .contenedor404 h1 {
     font-size: 2rem;
   }
-  
-  .contenedor404 p{
+
+  .contenedor404 p {
     font-size: 1rem;
   }
 
@@ -449,30 +450,33 @@
   .imgDestacamos {
     width: 110%;
   }
-/* PAGE SOY CONDUCTOR */
-.publicarViaje {
-   width: 90%;
-     padding-top: 2%;
-}
 
-.publicarViaje form {
+  /* PAGE SOY CONDUCTOR */
+  .publicarViaje {
+    width: 90%;
+    padding-top: 2%;
+  }
+
+  .publicarViaje form {
     flex-direction: column;
     gap: 1rem;
   }
 
   .campo {
-    width: 100%; /* Una sola columna */
+    width: 100%;
+    /* Una sola columna */
   }
 
 
   /* Page quienes somos -------------------------------------------------*/
-    .grupo {
+  .grupo {
     flex-direction: column;
     gap: 2rem;
   }
 
   .integrante {
-    flex-direction: column;    /* imagen arriba, texto abajo */
+    flex-direction: column;
+    /* imagen arriba, texto abajo */
     text-align: center;
   }
 
@@ -502,13 +506,14 @@
 
   .oracionValores {
     font-size: 0.95rem;
-=======
+  }
+
   .checkboxViaje {
     justify-content: flex-start;
   }
 
   .publicarViaje button {
-    width: 100%; 
+    width: 100%;
     padding: 0.8rem;
     font-size: 1.1rem;
   }
@@ -521,6 +526,7 @@
     margin-bottom: 5%;
     display: block;
   }
+
 
   .textoPublicarViaje h5,
   .textoPublicarViaje p {
