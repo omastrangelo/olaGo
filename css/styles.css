@@ -1186,3 +1186,8 @@ button[type="submit"] {
   outline: none;
   box-shadow: none;
 }
+
+.contenedorTerminos {
+  padding: 3rem 16rem;
+  align-items: center;
+}
