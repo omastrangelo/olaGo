@@ -54,7 +54,7 @@ if (!form) {
           title: '¡Listo!',
           text: 'El viaje fue actualizado correctamente.',
           icon: 'success',
-          confirmButtonText: 'Volver',
+          confirmButtonText: 'Ok',
           customClass: {
             confirmButton: 'mi-boton-personalizado'
           },
