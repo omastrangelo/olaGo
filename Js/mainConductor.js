@@ -57,7 +57,7 @@ async function cargarYRenderizarViajes() {
 cargarYRenderizarViajes();
 
 // Eliminar viaje
-function eliminarViaje(id) {
+/* function eliminarViaje(id) {
     Swal.fire({
       title: '¿Estás seguro?',
       text: 'Esta acción eliminará el viaje de forma permanente.',
@@ -83,7 +83,42 @@ function eliminarViaje(id) {
     });
   }
 
+ */
 
+  function eliminarViaje(id) {
+    Swal.fire({
+      title: '¿Estás seguro?',
+      text: 'Esta acción eliminará el viaje de forma permanente.',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, eliminar',
+      cancelButtonText: 'Cancelar',
+      customClass: {
+      confirmButton: 'btn btn-danger',
+      cancelButton: 'btn btn-secondary'
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        let viajes = JSON.parse(localStorage.getItem("viajes")) || [];
+        const nuevosViajes = viajes.filter((viaje) => viaje.id !== id);
+        localStorage.setItem("viajes", JSON.stringify(nuevosViajes));
+  
+        Swal.fire({
+          title: 'Eliminado',
+          text: 'El viaje fue eliminado correctamente.',
+          icon: 'success',
+          confirmButtonText: 'OK',
+          customClass: {
+            confirmButton: 'mi-boton-personalizado'
+          },
+          buttonsStyling: false
+        }).then(() => {
+          // Recargamos los viajes para actualizar la vista
+          cargarYRenderizarViajes();
+        });
+      }
+    });
+  }
 // Editar Viajes
 viajesConductor.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-editar")) {

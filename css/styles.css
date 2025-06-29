@@ -552,7 +552,6 @@ justify-content: center;
 margin-bottom: 3%;
 }
 
-
 .grupo {
   display: flex;
   justify-content: center;
@@ -591,8 +590,7 @@ flex-wrap: wrap;
 .nombres {
   font-weight: bold;
    font-size: 1rem;
-}
-
+} 
 .resaltarEquipo {
   color:#e66c00;
 }
@@ -1105,7 +1103,7 @@ button[type="submit"] {
   gap: 2rem; /* espacio entre imagen e info */
   padding: 2rem;
 
-  flex-wrap: wrap; /* responsivo */
+  flex-wrap: wrap; 
 }
 
 .imgMiPerfil {
@@ -1182,7 +1180,7 @@ button[type="submit"] {
 .btn-guardar:active,
 .btn-guardar:focus {
   background-color: #d65f1d;
-  color: white;        /* <- aseguramos que no se vuelva blanco */
+  color: white;    
   outline: none;
   box-shadow: none;
 }
@@ -1190,4 +1188,18 @@ button[type="submit"] {
 .contenedorTerminos {
   padding: 3rem 16rem;
   align-items: center;
+}
+
+
+/*Estilo de botones de modales*/
+
+.btn-confirmar-personalizado{
+  background-color:#e76666 ;
+}
+
+.btn-confirmar-personalizado:hover,
+.btn-confirmar-personalizado:active,
+.btn-confirmar-personalizado:focus
+{
+  background-color:#e76666 ;
 }
