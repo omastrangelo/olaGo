@@ -72,25 +72,75 @@
                 antes de publicarlo y esperá las notificaciones de reserva</p>
         </div>
 
-        <form>
+
+        <form id="formCrear">
             <div class="campo">
-                <label>Lugar de salida *</label>
-                <input type="text" placeholder="Ingrese ciudad de salida">
+              <label for="origen">Lugar de salida *</label>
+              <input type="text" id="origen" name="origen" placeholder="Ingrese ciudad de salida">
+            </div>
+          
+            <div class="campo">
+              <label for="destino">Lugar de destino *</label>
+              <input type="text" id="destino" name="destino" placeholder="Ingrese ciudad de destino">
+            </div>
+          
+            <div class="campo">
+              <label for="fecha">Fecha de salida *</label>
+              <input type="text" id="fecha" name="fecha" placeholder="Ingrese fecha de salida">
+            </div>
+          
+            <div class="campo">
+              <label for="hora">Hora de salida *</label>
+              <input type="text" id="hora" name="hora" placeholder="Ingrese hora de salida">
+            </div>
+          
+            <div class="campo">
+              <label for="conductor">Email *</label>
+              <input type="email" id="conductor" name="conductor" placeholder="Ingrese su email">
+            </div>
+          
+            <div class="campo">
+              <label for="contacto">Celular *</label>
+              <input type="text" id="contacto" name="contacto" placeholder="Ingrese su celular">
+            </div>
+          
+            <div class="campo">
+              <label for="asientos">Asientos disponibles *</label>
+              <input type="number" id="asientos" name="asientos" placeholder="Ingrese cantidad de asientos libres">
+            </div>
+          
+            <div class="campo">
+              <label for="precio">Precio del viaje *</label>
+              <input type="number" id="precio" name="precio" placeholder="Ingrese el precio en ARS">
+            </div>
+          
+            <div class="checkboxViaje">
+              <input type="checkbox" id="terminos" name="terminos">
+              <label for="terminos">Acepto términos y condiciones.</label>
+            </div>
+          
+            <button type="submit">Publicar viaje</button>
+          </form>
+
+<!--         <form id="">
+            <div class="campo">
+                <label for="origen">Lugar de salida *</label>
+                <input type="text" id="origen" placeholder="Ingrese ciudad de salida">
             </div>
 
             <div class="campo">
-                <label>Lugar de destino *</label>
-                <input type="text" placeholder="Ingrese ciudad de destino">
+                <label for="destino">Lugar de destino *</label>
+                <input type="text" id="destino" placeholder="Ingrese ciudad de destino">
             </div>
 
             <div class="campo">
-                <label>Fecha de salida *</label>
-                <input type="text" placeholder="Ingrese fecha de salida">
+                <label for="fecha">Fecha de salida *</label>
+                <input type="text" id="fecha" placeholder="Ingrese fecha de salida">
             </div>
 
             <div class="campo">
-                <label>Hora de salida *</label>
-                <input type="number" placeholder="Ingrese hora de salida">
+                <label for="hora">Hora de salida *</label>
+                <input type="number" id="hora" placeholder="Ingrese hora de salida">
             </div>
 
             <div class="campo">
@@ -102,29 +152,29 @@
                 <label>Celular *</label>
                 <input type="number" placeholder="Ingrese su celular">
             </div>
-
+ -->
             <!-- <div class="campo">
                 <label>Descripción breve de su vehículo *</label>
                 <input type="text" placeholder="Marca, modelo, etc.">
             </div> -->
 
-            <div class="campo">
+<!--             <div class="campo">
                 <label>Asientos disponibles *</label>
                 <input type="number" placeholder="Ingrese cantidad de asientos libres">
             </div>
-
+ -->
             <!-- <div class="campo">
                 <label>¿Acepta mascotas? *</label>
                 <input type="text" placeholder="Por sí o por no">
             </div> -->
-
+<!-- 
             <div class="checkboxViaje">
                 <input type="checkbox">
                 <label>Acepto términos y condiciones.</label>
             </div>
 
             <button type="submit">Publicar viaje</button>
-        </form>
+        </form> -->
         <img class="publicarViajeImg" src="../img/CompartirViajeCard2.png" alt="">
     </section>
 
@@ -272,5 +322,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
+<script src="../Js/mainCrearViaje.js"></script>
+
 <script src="../Js/mainConductor.js"></script>
 </html>
