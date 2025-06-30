@@ -2,7 +2,6 @@ const form = document.getElementById("formEditar");
 
 if (!form) {
   console.error("No se encontró el formulario");
-  // No uses return fuera de función
 } else {
   const id = parseInt(localStorage.getItem("idViajeEditar"));
   if (!id) {
