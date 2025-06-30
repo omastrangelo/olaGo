@@ -1,3 +1,11 @@
+// Scroll botón publicar viaje ------------------------
+
+document.getElementById("irPublicarViaje").addEventListener("click", function () {
+    document.getElementById("publicarViaje").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+
 
 // Lógica para renderizar los viajes hardcodeados ------------------------
 
