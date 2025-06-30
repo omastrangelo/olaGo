@@ -5,7 +5,7 @@ document.getElementById("irPublicarViaje").addEventListener("click", function ()
       behavior: "smooth"
     });
   });
-
+ 
 
 // Lógica para renderizar los viajes hardcodeados ------------------------
 
