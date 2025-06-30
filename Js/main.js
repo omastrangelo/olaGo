@@ -1,4 +1,3 @@
-
 // fn para iniciar card de compartir viaje -------------------
 
 const btnPasajero = document.getElementById("btnPasajero");

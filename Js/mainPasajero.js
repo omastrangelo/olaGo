@@ -1,3 +1,11 @@
+// Scroll botón buscar viaje ------------------------
+
+document.getElementById("irBuscarViaje").addEventListener("click", function () {
+    document.getElementById("buscarViaje").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+
 // Lógica para renderizar los últimos viajes agregados con info hardcodeada ------------------------
 
 const viajesContainer = document.getElementById("viajes-container");
@@ -15,7 +23,7 @@ async function cargarYRenderizarViajes() {
       return;
     }
 
-    //el conteiner de los viajes y mapeamos el json, por cada uno creamos una card de viaje
+    //el container de los viajes y mapeamos el json, por cada uno creamos una card de viaje
     viajesContainer.innerHTML = viajes
       .map(
         (viaje) => `
